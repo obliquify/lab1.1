@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", monospace;
+}
+
+.page {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+
+}
+
+.header {
+  margin-top: 50px;
+  padding: 40px;
+  height: auto;
+  width: auto;
+  background-color: #EDDCD2; /*Champagne Pink */
+}
+
+.content {
+  padding: 30px;
+  background-color: #EDDCD2; /* Champagne Pink */
+  height: auto;
+  width: auto;
+}
+
+.feature-a {
+  order: 3;
+
+}
+
+ul.cameratypes {
+list-style-type: square;
+}
+
+.photo-grid-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.photo-grid {
+    width: auto;
+    height: auto;
+    display: flex;
+    /*justify-content: center;*/
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo-grid-item {
+    padding: 100px;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  body {
+
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .feature-a,
+  .feature-b,
+  .feature-c {
+    width: 50%;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .page {
+    width: 960px;
+    margin: 0 auto;
+  }
+  .feature-a,
+  .feature-b,
+  .feature-c {
+    width: 33.3%;
+  }
+  .header {
+    height: 400px;
+  }
+  .content {
+    order: 2;
+  }
+}
+
+  }
